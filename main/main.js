@@ -3,18 +3,26 @@ import { sleep } from 'k6';
 import { error_check } from '../check/check.js';
 import { scenario } from 'k6/execution';
 
-import { ran } from '../api/script.js';
-import { callback_scb } from '../api/getJson.js';
+import { getAllNews } from '../api/getAllNews.js';
+import { getMember } from '../api/getMember.js';
+import { createCustomer } from '../api/createCustomer.js';
+import { searchB } from '../api/searchB.js';
+import { checkSeatAndUpdate } from '../api/checkSeatAndUpdate.js';
+import { status_customer } from '../api/status_customer.js';
 
 
 
 //============================================================================
 
 export default function () {    //เรียกใช้ API ใน export default function
-  response = ran()
-  //response = callback_scb(scenario)
 
-  
+  response = getAllNews()
+  //response = getMember()
+  //response = createCustomer(cid)
+  //response = searchB()
+  //response = checkSeatAndUpdate()
+  //response = status_customer()
+
   error_check(response);
   sleep(1)
 }
