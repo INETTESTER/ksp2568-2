@@ -19,8 +19,8 @@ export default function () {    //เรียกใช้ API ใน export def
   //response = getAllNews()
   //response = getMember()
   //response = createCustomer(cid)
-  response = searchB()
-  //response = checkSeatAndUpdate()
+  //response = searchB()
+  response = checkSeatAndUpdate()
   //response = status_customer()
 
   error_check(response);
