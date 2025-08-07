@@ -4,13 +4,13 @@
 ##########################################################################
 ##########################################################################
 ##########################################################################
-                     API="createCustomer" 
+                     API="searchB" 
                      google_sheet="https://docs.google.com/spreadsheets/d/1y0JxD9DAp7oBq92xGrkQPu-NuqmSzjqscoURJK--lhw/edit?gid=1610289956#gid=1610289956" 
-                     id="1"                 #เปลี่ยน id ทุกครั้งที่ยิง
+                     id="4"                 #เปลี่ยน id ทุกครั้งที่ยิง
                      user="10000";            #จำนวนผู้ใช้งาน
                      duration="1";         #วินาที
                      scenario="1"           #scenario="1" ยิงเเบบกำหนด request (duration ได้แค่ 1 วินาที)
-                     cid="1"                #scenario="2" ยิงเเบบกำหนด VUs  (กำหนดว่า user x คน ใช้ระบบ x วินาที)
+                     cid="1b"                #scenario="2" ยิงเเบบกำหนด VUs  (กำหนดว่า user x คน ใช้ระบบ x วินาที)
                                             #scenario="3" ยิงเเบบกำหนด request แต่ไม่แม่นยำ (duration กี่วินาทีก็ได้)
                      status="normal"        #พิมพ์คำว่า "normal" เพื่อยิงโหลดเเละ upload report ไปที่ sheet
                                             #พิมพ์คำว่า "report" upload report ล่าสุดไปที่ sheet
