@@ -17,8 +17,8 @@ import { status_customer } from '../api/status_customer.js';
 export default function () {    //เรียกใช้ API ใน export default function
 
   //response = getAllNews()
-  response = getMember()
-  //response = createCustomer(cid)
+  //response = getMember()
+  response = createCustomer(cid)
   //response = searchB()
   //response = checkSeatAndUpdate()
   //response = status_customer()
